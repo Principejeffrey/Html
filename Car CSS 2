@@ -273,6 +273,19 @@ body {
 .footer-box span {
   color: #FFA500;
 }
+/* Copyright styles */
+.copyright {
+    padding: 20px;
+    text-align: center;
+    color: #f4f4f4; /* Change the color to match your design */
+    background: #333; /* Change the background color to match your design */
+    font-size: 14px; /* Small font size */
+}
+
+.copyright p:hover {
+    color: #FFA500; /* Change the color to match your design */
+}
+
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
