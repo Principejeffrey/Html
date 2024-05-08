@@ -287,79 +287,73 @@ body {
 }
 
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  .navbar {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 20px;
-  }
+/* media queries*/
+@media (max-width:991px){
 
-  .navbar.active {
-    display: flex;
-  }
-
-  .navbar li {
-    margin-bottom: 10px;
-  }
-
-  .search-box {
-    top: 50px;
-  }
+html{
+    font-size: 55%
+}
+header{
+    padding: 2rem;
+}
+section{
+    padding: 2rem;
+}
+.home{
+    background-position: center;
 }
 
-@media screen and (max-width: 576px) {
-  .home-text h1 {
-    font-size: 24px;
-  }
-
-  .home-text p {
-    font-size: 16px;
-  }
-
-  .btn {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-
-  .box h2 {
-    font-size: 16px;
-  }
-
-  .about-text h2 {
-    font-size: 24px;
-  }
-
-  .about-text p {
-    font-size: 16px;
-  }
-
-  .service__subheader {
-    font-size: 20px;
-  }
-
-  .service__header {
-    font-size: 30px;
-  }
-
-  .service__card h4 {
-    font-size: 16px;
-  }
-
-  .service__card p {
-    font-size: 14px;
-  }
-
-  .footer-box h3 {
-    font-size: 20px;
-  }
-
-  .footer-box a {
-    font-size: 14px;
-  }
 }
+
+@media (max-width:768px){
+    html .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);;
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgb(0, 0, 0, .1);
+        display: block;
+    }
+    .home.content h3{
+        font-size: 5rem;
+
+    }
+    .home.content span{
+        font-size: 5rem;
+
+    }
+    .icons-container .icons h3{
+
+        font-size: 4rem;
+    }
+
+
+    .icons-container .icons span{
+        font-size: 4rem;
+    }
+}
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 70%
+    }
+    .heading{
+        font-size: 3rem;
+    }
+
+    }
