@@ -9,7 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 .container {
@@ -24,13 +24,13 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #333;
+  background-color: #b42e2e;
   color: #fff;
 }
 
 .logo {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
 }
 
@@ -52,6 +52,8 @@ body {
 .home {
   padding: 100px 0;
   text-align: center;
+  background: url(/images/bg-hero-3.jpg) center/cover fixed;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .home-text h1 {
@@ -67,15 +69,16 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #333131;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .btn:hover {
-  background-color: #555;
+  background-color: #454242;
 }
+
 /* Work Section */
 .cars {
   padding: 100px 0;
@@ -84,7 +87,7 @@ body {
 
 .heading span {
   font-size: 24px;
-  color: #333;
+  color: #2d2b2b;
 }
 
 .heading h2 {
@@ -117,18 +120,29 @@ body {
 
 /* About Section */
 .about {
-  padding: 100px 0;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-img,
+.abou-text {
+  flex: 1 1 21rem;
+}
+
+.about-text span {
+  font-weight: 500;
+  color: var(--main-color);
 }
 
 .about-text h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 1.7rem;
 }
 
 .about-text p {
-  font-size: 18px;
-  margin-bottom: 40px;
+  font-size: 0.938rem;
+  margin: 0.5rem 0 1.4rem;
 }
 
 /* Service Section */
@@ -139,7 +153,7 @@ body {
 
 .service__subheader {
   font-size: 24px;
-  color: #333;
+  color: #000000;
 }
 
 .service__header {
@@ -150,8 +164,8 @@ body {
 .service__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px; /* Increased gap for better spacing */
-  justify-items: center; /* Align items horizontally */
+  grid-gap: 40px;
+  justify-items: center;
 }
 
 .service__card {
@@ -178,7 +192,7 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
   padding: 50px 0;
   text-align: center;
@@ -187,6 +201,7 @@ body {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-box {
@@ -216,7 +231,8 @@ body {
 /* Additional Styles */
 
 /* Navbar */
-#menu-icon, #search-icon {
+#menu-icon,
+#search-icon {
   font-size: 24px;
   cursor: pointer;
 }
@@ -243,19 +259,15 @@ body {
 
 /* Home Section */
 .home-text span {
-  color: #FFA500;
+  color: #7700ff;
 }
 
 .btn:hover {
-  background-color: #555;
+  background-color: #010101;
   color: #fff;
 }
 
 /* Footer */
-.footer-container {
-  flex-wrap: wrap;
-}
-
 .social {
   margin-top: 20px;
 }
@@ -273,87 +285,4 @@ body {
 .footer-box span {
   color: #FFA500;
 }
-/* Copyright styles */
-.copyright {
-    padding: 20px;
-    text-align: center;
-    color: #f4f4f4; /* Change the color to match your design */
-    background: #333; /* Change the background color to match your design */
-    font-size: 14px; /* Small font size */
-}
 
-.copyright p:hover {
-    color: #FFA500; /* Change the color to match your design */
-}
-
-
-/* media queries*/
-@media (max-width:991px){
-
-html{
-    font-size: 55%
-}
-header{
-    padding: 2rem;
-}
-section{
-    padding: 2rem;
-}
-.home{
-    background-position: center;
-}
-
-}
-
-@media (max-width:768px){
-    html .fa-bars{
-        display: block;
-    }
-    header .navbar{
-        position: absolute;
-        top: 100%; left: 0; right: 0;
-        background: #eee;
-        border-top: .1rem solid rgba(0,0,0,.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header #toggler:checked ~ .navbar{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);;
-    }
-    header .navbar a{
-        margin: 1.5rem;
-        padding: 1.5rem;
-        background: #fff;
-        border: .1rem solid rgb(0, 0, 0, .1);
-        display: block;
-    }
-    .home.content h3{
-        font-size: 5rem;
-
-    }
-    .home.content span{
-        font-size: 5rem;
-
-    }
-    .icons-container .icons h3{
-
-        font-size: 4rem;
-    }
-
-
-    .icons-container .icons span{
-        font-size: 4rem;
-    }
-}
-
-
-@media (max-width:450px){
-
-    html{
-        font-size: 70%
-    }
-    .heading{
-        font-size: 3rem;
-    }
-
-    }
